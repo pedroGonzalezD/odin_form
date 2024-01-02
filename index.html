@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Form</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="container__img">
+        <img src="img/form_img.jpg" alt="working-img" />
+        <p>
+          Foto de
+          <a
+            href="https://unsplash.com/es/@microsoftedge?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Microsoft Edge</a
+          >
+          en
+          <a
+            href="https://unsplash.com/es/fotos/una-persona-que-usa-una-computadora-portatil-Px0X7g1mc8k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </section>
+      <section class="container__form">
+        <h1 class="explain">
+          This is not real online service! you know you need something like this
+          in tour life to help you realize you deepset dreams.
+        </h1>
+        <p class="sing-up__text">Sing up now to get started.</p>
+        <p>you know you wnat to.</p>
+        <form action="">
+          <div class="container__input">
+            <h2>Let`s do this!</h2>
+            <ul>
+              <div>
+                <li>
+                  <input type="text" required name="first-name" id="name" />
+                  <span class="bar"></span>
+                  <label for="name" class="label">First Name</label>
+                  <p class="error"></p>
+                </li>
+                <li>
+                  <input type="text" required name="last-name" id="last-name" />
+                  <span class="bar"></span>
+                  <label for="last-name" class="label">Last Name</label>
+                </li>
+              </div>
+              <div>
+                <li>
+                  <input type="email" required name="email" id="email" />
+                  <span class="bar"></span>
+                  <label for="email" class="label">Email</label>
+                  <p class="error hidden" data-name="email">
+                    Please provide a valid Email
+                  </p>
+                </li>
+                <li>
+                  <input type="tel" required name="phone" id="phone" />
+                  <span class="bar"></span>
+                  <label for="phone" class="label">Phone Number</label>
+                  <p class="error hidden" data-name="phone">
+                    Please enter valid number
+                  </p>
+                </li>
+              </div>
+              <div>
+                <li>
+                  <input
+                    type="password"
+                    required
+                    name="password"
+                    id="password"
+                    minlength="8"
+                  />
+                  <span class="bar"></span>
+                  <label for="password" class="label">Password</label>
+                  <p class="error hidden" data-name="password">
+                    Password requires minimum 8 charecters
+                  </p>
+                </li>
+                <li>
+                  <input
+                    type="password"
+                    required
+                    name="confirm-password"
+                    id="confirm-password"
+                  />
+                  <span class="bar"></span>
+                  <label for="confirm-password" class="label"
+                    >Confirm Password</label
+                  >
+                  <p class="error hidden" data-name="confirm-password">
+                    Password did not match
+                  </p>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <button type="submit">Create Account</button>
+          <p class="log-in">Already have an account? <a href="">Log in</a></p>
+        </form>
+      </section>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
